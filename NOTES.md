@@ -16,3 +16,6 @@ npx prisma init --datasource-provider postgresql
 
 ### Migrate the schema
 npx prisma migrate dev --name init
+
+### PostgreSQL connection string
+postgres://postgres:postgrespw@postgres:5432
