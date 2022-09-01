@@ -1,0 +1,24 @@
+{
+  "name": "miniature-data-channel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mmatokovi",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "web"
+    ]
+  },
+  "scripts": {
+    "api:dev": "cd api && npm run dev",
+    "web:dev": "cd web && npm run dev"
+  },
+  "prisma": {
+    "schema": "./api/db/schema.prisma"
+  },
+  "devDependencies": {
+    "prisma": "^4.3.0"
+  }
+}
