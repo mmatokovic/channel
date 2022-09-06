@@ -1,5 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 
+/*
+ * See https://www.prisma.io/docs/reference/tools-and-interfaces/prisma-client/constructor for options
+ * Instance of the Prisma Client
+ */
 export const db = new PrismaClient({
     log: [
       { level: 'warn', emit: 'event' },

@@ -3,7 +3,7 @@ import buildServer from "./server";
 describe("Endpoint integration tests", () => {
     const server = buildServer();
 
-    it("GET / should respond with status 200", async () => {
+    it("GET /ping should respond with status 200", async () => {
         const response = await server.inject({ 
             method: "GET", 
             url: "/ping" 
